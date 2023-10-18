@@ -1,11 +1,16 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+console.log("Hola desde app.js!");
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
+let domain = [".com", ".net", ".us", ".es", ".io", ".ir", ".de", ".uy"];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let d in domain) {
+  for (let p in pronoun) {
+    for (let a in adj) {
+      for (let n in noun) {
+        console.log(pronoun[p] + "" + adj[a] + "" + noun[n] + "" + domain[d]);
+      }
+    }
+  }
+}
